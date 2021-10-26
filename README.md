@@ -1,5 +1,6 @@
 # faceswap_cxx
 3D FaceSwap, Using cpu realtime
+![trump face in putin ](https://github.com/Dian-Yi/faceswap_cxx/blob/main/demo/putin2trump.gif)
 # realtime face swap using cpu with 3D model
 
 ## Introduction
@@ -10,7 +11,9 @@
   - 人脸关键点滤波: oneEuroFilter算法
   - 计算3D模型顶点位置: 使用GaussNewton算法计算相关参数(共20个参数:0-5为缩放，平移，旋转相关, 6-20为shape相关)
   - 人脸融合贴回视频帧
-
+## Using and Compile
+- download file "DependentLibrary.rar" (in release) and extract 3 dirs("dep", "dll", "lib") to this project dir.
+- using vs2019 compile debug or release.
 ## Directory structure
 - 外部依赖项：                    ./dep/
 - 3D 画图依赖相关：               ./deps, ./Eigen, ./GL, ./GLFW, ./zlib
